@@ -55,6 +55,8 @@ func fetch(completion: (_ complete: Bool) -> ()) {
 // A managed object context is a scratchpad where you can work with your managed objects (or the objects you want to save)
 // My function, "fetch" is going to return a completion variable (inside a completion handler) that is either true or false. 
 // This will allow whomever is fetching the data through the "fetch" function to set  what will happen if completion is true or false
+// You need to fetch Core Data and set it to your array of deals
+// deals = try managedContext.fetch(NSFetchRequest<Deal>(entityName: "Deal")
 
 //NOTES ON APP DELEGATE
 // An app delegate sits in the middle of everything - it's the entry point to your application
